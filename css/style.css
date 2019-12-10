@@ -1,0 +1,413 @@
+/* Color Palette */
+/* Rosy Brown #bea798 */
+/* Cadet Blue #648c9c */
+/* #92aeb9; */
+/* Dark Slate Gray #414345 */
+/* Light Steel Blue #dfe0e1 */
+/* Slate Gray #818384 */
+
+/*------------------------------------------------------------------
+    [Table of contents]
+
+    1. Welcome
+    2. Navbar
+    3. About 
+    4. Skills 
+    5. Work Experience 
+    6. Portfolio 
+    7. Contact
+    8. Footer
+    -------------------------------------------------------------------*/
+
+
+/* 0. GENERAL STYLES */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: #414345;
+  background-color: #dfe0e1;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: .8px;
+}
+
+/* body {
+  padding: 0;
+  margin: 0;
+} */
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+}
+
+/* UTILITIES */
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slides-navigation {
+  z-index: 5;
+}
+
+.slides-navigation a.prev {
+  left: 20px;
+}
+
+.slides-navigation a.next {
+  right: 20px;
+}
+
+.title-message {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  z-index: 4;
+  text-align: center;
+  margin-top: -125px;
+}
+
+.title-message .heading p {
+  color: #fff;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 200;
+  letter-spacing: 7px;
+}
+
+.title-message .heading .main-title {
+  font-size: 50px;
+}
+
+.title-message .heading .subtitle {
+  font-size: 23px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+/*********** About Section ************/
+#about {
+  padding: 80px 0;
+  margin: 0;
+  background-color: #648C9C;
+  /* width: 100%; */
+}
+
+.about-container {   
+  color: #fff;                  /* grid container for the About content */ 
+  display: grid;
+  /* grid-template-columns: repeat(5, minmax(150px, 200px)); */
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-gap: 40px;
+  /* max-width: 1000px; */
+  margin: 1rem auto;
+  justify-items: center;
+}
+
+.about-heading {
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.about-content {
+  text-align: center;
+}
+
+.profile-pic {
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+
+.about-image {
+  max-height: 200px;
+  border-radius: 50%;
+}
+
+/* .section {
+  text-align
+} */
+
+
+/* Skills Section */
+.skills-section {
+  background-color: #648c9c;
+  /* background-color: #dfe0e1; */
+  color: #fff;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  padding-top: 0;
+}
+
+.skill {
+  padding: 3px;
+  font-size: 4rem;
+  color: #fff;
+  /* color: #648c9c; */
+}
+/* Skills Section END */
+
+
+/* Navigation Section */
+#navigation {
+  background-color: #648C9C;
+  padding: 20px 5%;
+  z-index: 100; /* nav bar will always be on top of other content */
+  width: 100%;
+}
+
+#navigation li {
+  padding: 0 10px;
+  border-radius: 15px;
+}
+
+#navigation li:hover {
+  background-color: #92aeb9;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: 0.7s;
+}
+
+#navigation li a {
+  color: #fff;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: 0.7s;
+}
+
+#navigation li a:hover {
+  color: #292929;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+  transition: 0.7s;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background: url(../assets/images/icons/hamburger-menu.svg);
+  background-size: 100%;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+/* Navigation Section END */
+
+/* Projects - CSS Cookbook cards */
+
+#projects, #publications {
+  padding: 80px 0;
+  margin: 0;
+  /* width: 100%; */
+}
+
+.projects-section {
+  background-color: #dfe0e1;
+  /* background-color: #648c9c; */
+  text-align: center;
+}
+
+.projects-heading {
+  padding-bottom: 2rem;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+img {
+  max-width: 100%;
+}
+
+.cards-container {                      /* grid container for the cards */ 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 20px;
+  /* max-width: 1000px; */
+  margin: 1em auto;
+}
+
+.card-container {
+  padding: 7px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background-color: #c1d0d7;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: 0.7s;
+}
+
+.card-container:hover,
+.card-container:active {
+  background-color: #648c9c;
+  transition: 0.7s;
+}
+
+.card-link {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.card-link:hover,
+.card-link:active {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.project-card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+  border: 1px solid #999;
+  border-radius: 3px;
+  color: #414345;
+  height: 100%;
+}
+
+.project-card:hover,
+.project-card:active {
+  box-shadow: 3px 3px 41px -3px rgba(0,0,0,0.38);
+  -webkit-box-shadow: 3px 3px 41px -3px rgba(0,0,0,0.38);
+  -moz-box-shadow: 3px 3px 41px -3px rgba(0,0,0,0.38);
+  transition: 0.7s;
+}
+
+.project-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-header {
+  height: 5.5rem;
+  padding-top: 15px;
+}
+
+.card-heading {
+  margin: 0;
+  font-size: 120%;
+  line-height: 1.75rem;
+}
+
+.card-image {
+  border: 1px solid #dfe0e1;
+}
+
+.card-icon-accessible {
+  font-size: 8rem;
+  background-color: #4c6ef5;
+  /* border-bottom: 1px solid #dfe0e1; */
+  color: #fff;
+}
+
+.project-card .content {
+  padding: .5rem;
+  letter-spacing: .5px;
+  font-size: 1rem;
+}
+
+.project-card footer {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Projects - CSS Cookbook cards END */
+
+
+/* Publications - CSS Cookbook cards */
+#publications {
+  /* background-color: #dfe0e1; */
+  background-color: #648c9c;
+  text-align: center;
+  color: #fff;
+}
+
+.pubs-heading {
+  padding-bottom: 2rem;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+/* Publications - CSS Cookbook cards END */
+
+
+/* Public Speaking - CSS Cookbook cards */
+#speaking {
+  background-color: #dfe0e1;
+  /* background-color: #648c9c; */
+  text-align: center;
+  /* color: #fff; */
+}
+
+.speaking-heading {
+  padding-bottom: 2rem;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+}
+/* Public Speaking - CSS Cookbook cards END */
+
+
+/* Contact */
+.contact-section {
+  /* background-color: #dfe0e1; */
+  background-color: #648c9c;
+  color: #fff;
+}
+
+.contact-container {
+  /* width: 80%; */
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  padding-bottom: 2rem;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn-contact {
+  /* background-color: #648c9c; */
+  background-color: #dfe0e1;
+  padding: 10px 15px;
+  /* border: #648c9c; */
+  border: #dfe0e1;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  color: #292929;
+}
+
+.btn-contact:hover,
+.btn-contact:active {
+  /* background-color: #648c9c; */
+  background-color: #dfe0e1;
+  /* padding: 12px 18px; */
+  /* border: #648c9c; */
+  border: #dfe0e1;
+  color: #292929;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+.footer-section {
+  background-color: #292929;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.quote {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.footer-byline {
+  font-size: 1rem;
+}
